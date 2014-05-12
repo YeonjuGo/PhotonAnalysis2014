@@ -1,0 +1,93 @@
+09-May-2014 04:20:14 EDT  Initiating request to open file file:/mnt/hadoop/cms/store/user/rkunnawa/Hydjet1p8_TuneDrum_Quenched_MinBias_2760GeV/HIMinBias2011_Hydjet_2760GeV_STARTHI53_LV1_7Mar2014_1040EST_5_3_16_trk8_jet21_RECO/296b762a3f7ae585942f7234457ce1af/step3_RAW2DIGI_L1Reco_RECO_100_1_sO2.root
+09-May-2014 04:21:08 EDT  Successfully opened file file:/mnt/hadoop/cms/store/user/rkunnawa/Hydjet1p8_TuneDrum_Quenched_MinBias_2760GeV/HIMinBias2011_Hydjet_2760GeV_STARTHI53_LV1_7Mar2014_1040EST_5_3_16_trk8_jet21_RECO/296b762a3f7ae585942f7234457ce1af/step3_RAW2DIGI_L1Reco_RECO_100_1_sO2.root
+TimeReport> Report activated
+TimeReport> Report columns headings for events: eventnum runnum timetaken
+TimeReport> Report columns headings for modules: eventnum runnum modulelabel modulename timetakeni
+TimeReport> JobTime=1.39962e+09 JobCPU=13.7399
+
+%MSG-w SiStripQuality:  EventSetupRecordDataGetter:hltGetConditions@beginRun  09-May-2014 04:23:18 EDT Run: 1
+The cabling should always include the active feds in runInfo and possibly have some morethere are instead 59 feds only active in runInfo
+%MSG
+Begin processing the 1st record. Run 1, Event 102091, LumiSection 12762 at 09-May-2014 04:24:29.992 EDT
+TimeModule> 102091 1 randomEngineStateProducer RandomEngineStateProducer 0.000191212
+TimeModule> 102091 1 VtxSmeared BetafuncEvtVtxGenerator 0.186575
+TimeModule> 102091 1 hiGenParticles GenParticleProducer 0.00088501
+----- Begin Fatal Exception 09-May-2014 04:24:30 EDT-----------------------
+An exception of category 'ProductNotFound' occurred while
+   [0] Processing run: 1 lumi: 12762 event: 102091
+   [1] Running path 'generation_step'
+   [2] Calling event method for module GenParticleProducer/'hiGenParticles'
+Exception Message:
+Principal::getByLabel: Found zero products matching all criteria
+Looking for type: edm::HepMCProduct
+Looking for module label: hiSignal
+Looking for productInstanceName: 
+
+   Additional Info:
+      [a] If you wish to continue processing events after a ProductNotFound exception,
+add "SkipEvent = cms.untracked.vstring('ProductNotFound')" to the "options" PSet in the configuration.
+
+----- End Fatal Exception -------------------------------------------------
+TimeEvent> 102091 1 0.188288 0.18797 0.18797
+09-May-2014 04:24:30 EDT  Closed file file:/mnt/hadoop/cms/store/user/rkunnawa/Hydjet1p8_TuneDrum_Quenched_MinBias_2760GeV/HIMinBias2011_Hydjet_2760GeV_STARTHI53_LV1_7Mar2014_1040EST_5_3_16_trk8_jet21_RECO/296b762a3f7ae585942f7234457ce1af/step3_RAW2DIGI_L1Reco_RECO_100_1_sO2.root
+MemoryReport> Peak virtual size 1812.54 Mbytes
+ Key events increasing vsize: 
+[0] run: 0 lumi: 0 event: 0  vsize = 0 deltaVsize = 0 rss = 0 delta = 0
+[0] run: 0 lumi: 0 event: 0  vsize = 0 deltaVsize = 0 rss = 0 delta = 0
+[1] run: 1 lumi: 12762 event: 102091  vsize = 1812.54 deltaVsize = 0 rss = 1376.7 delta = 0
+[0] run: 0 lumi: 0 event: 0  vsize = 0 deltaVsize = 0 rss = 0 delta = 0
+[0] run: 0 lumi: 0 event: 0  vsize = 0 deltaVsize = 0 rss = 0 delta = 0
+[0] run: 0 lumi: 0 event: 0  vsize = 0 deltaVsize = 0 rss = 0 delta = 0
+[0] run: 0 lumi: 0 event: 0  vsize = 0 deltaVsize = 0 rss = 0 delta = 0
+[1] run: 1 lumi: 12762 event: 102091  vsize = 1812.54 deltaVsize = 0 rss = 1376.7 delta = 0
+TimeReport> Time report complete in 195.256 seconds
+ Time Summary: 
+ - Min event:   0.188288
+ - Max event:   0.188288
+ - Avg event:   195.256
+ - Total job:   195.256
+ CPU Summary: 
+ - Min event:   0.18797
+ - Max event:   0.18797
+ - Avg event:   0.18797
+ - Total job:   103.126
+ - Total event: 0.18797
+
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 SiStripQuality       -w EventSetupRecord                       1        1
+    2 TimeEvent            -w PostProcessPath                        1        1
+    3 TimeModule           -w BetafuncEvtVtxGe                       1        1
+    4 TimeModule           -w GenParticleProdu                       1        1
+    5 TimeModule           -w RandomEngineStat                       1        1
+    6 TimeReport           -e AfterBeginJob                          1        1
+    7 TimeReport           -e AfterModEndJob                         1        1
+    8 Fatal Exception      -s PostProcessPath                        1        1
+    9 MemoryReport         -s AfterModEndJob                         1        1
+   10 fileAction           -s file_close                             1        1
+   11 fileAction           -s file_open                              2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 SiStripQuality       Run: 1                            
+    2 TimeEvent            1/102091                          
+    3 TimeModule           1/102091                          
+    4 TimeModule           1/102091                          
+    5 TimeModule           1/102091                          
+    6 TimeReport           BeforeEvents                      
+    7 TimeReport           PostEndRun                        
+    8 Fatal Exception      1/102091                          
+    9 MemoryReport         PostEndRun                        
+   10 fileAction           PostEndRun                        
+   11 fileAction           pre-events       pre-events       
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning                 5                   5
+Error                   2                   2
+System                  5                   5
