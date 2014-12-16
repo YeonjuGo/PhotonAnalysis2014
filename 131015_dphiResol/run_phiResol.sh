@@ -1,0 +1,7 @@
+root -l -b -q 'phiResol.C+(0)'
+root -l -b -q 'phiResol.C+(1)'
+root -l -b -q 'phiResol.C+(2)'
+root -l -b -q 'phiResol.C+(4)'
+root -l -b -q 'phiResol.C+(5)'
+root -l -b -q 'phiResol.C+(6)'
+root -l -b -q 'phiResol.C+(7)'
